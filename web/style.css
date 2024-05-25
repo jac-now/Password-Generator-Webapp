@@ -1,0 +1,10 @@
+/* Basic styling to make it look a bit nicer */
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+input, button {
+    padding: 8px;
+    margin: 10px;
+}
