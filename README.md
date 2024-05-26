@@ -1,10 +1,9 @@
 # abmsdpassgen
-Dockerized web app password generator for service desk
-
+A dockerized web app version of my password generator at https://github.com/jac-now/projects/blob/main/Python/passwordgenerator.py modified for use at the service desk.
 
 # Introduction
 
-This is a simple yet secure password generator web app built using Flask (Python) and Docker. It provides a user-friendly interface to generate strong and random passwords for various purposes.
+This is a simple yet secure password generator web app built using Flask (Python) and Docker. It provides a user-friendly interface to generate strong, random, and memorable passwords for various purposes.
 
 ## Features
 
@@ -23,29 +22,20 @@ This is a simple yet secure password generator web app built using Flask (Python
 
    `git clone https://github.com/jac-now/abmsdpassgen.git
    cd abmsdpassgen`
-
-2. **Create Virtual Environment:**
-   
-   `python3 -m venv .venv
-   source .venv/bin/activate`
-
-4. **Install Requirements:**
-   
-   `pip install -r requirements.txt`
  
-6. **Build the Docker Image:**
+2. **Build the Docker Image:**
    
    `docker build -t password-generator .`
    
-7. **Run the Container:**
+3. **Run the Container:**
    
    `docker run -d -p 5000:5000 --name password-app password-generator`
 
-9. **Go to the Web App:**
+4. **Go to the Web App:**
 
    http://localhost:5000
 
-10. **Generate a Password:**
+5. **Generate a Password:**
 
 Enter your desired password length (minimum 8 characters).
 Click the "Generate" button.
@@ -54,12 +44,12 @@ Important: Passwords are not stored, so be sure to copy or save your generated p
 
 **Project Structure**
 
-app.py: The main Flask application script.
-passwordgenerator/passwordgenerator.py: Contains the password generation logic.
-web/index.html: The HTML template for the web interface.
-web/style.css: CSS styling for the web page (dark mode theme).
-Dockerfile: Instructions for building the Docker image.
-requirements.txt: Python package dependencies.
+**app.py:** The main Flask application script.
+**passwordgenerator/passwordgenerator.py:** Contains the password generation logic.
+**web/index.html:** The HTML template for the web interface.
+**web/style.css:** CSS styling for the web page (dark mode theme).
+**Dockerfile:** Instructions for building the Docker image.
+**requirements.txt:** Python package dependencies.
 
 **Additional Information**
 
@@ -78,23 +68,21 @@ When hosting the Docker container on a server or cloud platform with a custom do
 
    - Open the `app.py` file.
    - Find the line where you initialize CORS:
-      CORS(app, origins='*')  # Replace '*' with your actual domain
-     
+     CORS(app, origins='*')  # Replace '*' with your actual domain
    - Replace `'*'` (which allows all origins) with the actual domain name or IP address where your web app will be hosted. For example:
-         CORS(app, origins='domain.com')
-
+     CORS(app, origins='domain.com')
 
 2. **Rebuild Docker Image:**
 
    - Rebuild the Docker image to include this updated configuration:
-      `docker build -t password-generator .`
+     `docker build -t password-generator .`
 
 3. **Run the Container:**
 
    - Stop the existing container (if it's running):
-      - `docker stop password-app`
+     `docker stop password-app`
    - Run the updated container with your desired configuration:
-      - `docker run -d -p 5000:5000 --name password-app password-generator`
+     `docker run -d -p 5000:5000 --name password-app password-generator`
 
 **Important Note:**
 
