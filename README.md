@@ -7,7 +7,7 @@ A dockerized web app version of my password generator at https://github.com/jac-
 This is a simple yet secure password generator web app built using Flask (Python) and Docker. It provides a user-friendly interface to generate strong, random, and memorable passwords for various purposes.
 
 
-## Features
+ Features
 
 - Generates random passwords of customizable length.
 - Includes a mix of uppercase and lowercase letters, numbers, and special characters.
@@ -56,7 +56,7 @@ Important: Passwords are not stored, so be sure to copy or save your generated p
 
 
 
-**Project Structure**
+## Project Structure
 
 **app.py:** The main Flask application script.
 
@@ -72,7 +72,7 @@ Important: Passwords are not stored, so be sure to copy or save your generated p
 
 
 
-**Additional Information**
+## Additional Information
 
 **Security:** This is a basic password generator intended for local development and testing. For production use, consider adding more advanced security measures, such as:
 
