@@ -92,7 +92,7 @@ When hosting the Docker container on a server or cloud platform with a custom do
 
    - Open the `app.py` file.
    - Find the line where you initialize CORS:
-     CORS(app, origins='*')  # Replace '*' with your actual domain
+     CORS(app, origins=`'*'`)  # Replace `'*'` with your actual domain
    - Replace `'*'` (which allows all origins) with the actual domain name or IP address where your web app will be hosted. For example:
      CORS(app, origins='domain.com')
 
