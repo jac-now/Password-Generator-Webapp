@@ -24,7 +24,7 @@ This is a simple yet secure password generator web app built using Flask (Python
 
 1. **Clone the Repository:**
 
-   `git clone https://github.com/jac-now/abmsdpassgen.git
+   `git clone https://github.com/jac-now/abmsdpassgen.git`
    
    `cd abmsdpassgen`
 
