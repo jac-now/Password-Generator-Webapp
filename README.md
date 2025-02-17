@@ -1,5 +1,6 @@
 # abmsdpassgen
 A dockerized web app version of my password generator at https://github.com/jac-now/projects/blob/main/Python/passwordgenerator.py modified for use at the service desk.
+**Created for a previous job as a project - Updated version resides in my projects repo [https://github.com/jac-now/projects/web/Password-Generator-App](https://github.com/jac-now/projects/tree/main/web/Password-Generator-Webapp)**
 
 
 # Introduction
