@@ -4,7 +4,7 @@ from passwordgenerator.passwordgenerator import generate_password
 import logging
 
 app = Flask(__name__, template_folder='web', static_folder='web', static_url_path='')
-CORS(app, origins='*')
+CORS(app, origins='https://jacnow.net')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -18,6 +18,10 @@ def index():
             length = int(length_str)
             if length < 8:
                 raise ValueError("Password length must be at least 8 characters.")
+            if length > 9000:
+                raise ValueError("It's over 9000! But you probably don't require a password this long")
+            if length > 250:
+                raise ValueError("Why not go for a 5 digit number? Though do you really need a password this long?")
             password = generate_password(length)
             logging.info("Length = %d, password = %s", length, password)
         except ValueError as e:
