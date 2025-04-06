@@ -3,4 +3,5 @@ A dockerized web app version of my password generator at https://github.com/jac-
 
 **Modified version for show on my website - Generic version resides in my projects repo [https://github.com/jac-now/projects/web/Password-Generator-App](https://github.com/jac-now/projects/tree/main/web/Password-Generator-Webapp)**
 
-![image](https://github.com/user-attachments/assets/3c60c398-23ef-407d-86e5-66a70675980e)
+![image](https://github.com/user-attachments/assets/a5a28e40-bd13-4417-ac5e-6887be4c7a31)
+
